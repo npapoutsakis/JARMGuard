@@ -40,10 +40,10 @@ const MAX_BATCH_SIZE = 50;     // Trigger scan after 50 items
 chrome.runtime.onInstalled.addListener(async () => {
   try {
     // download the python scripts for the JARM fingerprinting
-    await Promise.all(['conf/threaded_jarm.py', 'conf/native_host.py'].map(downloadFile));
+    // await Promise.all(['conf/threaded_jarm.py', 'conf/native_host.py'].map(downloadFile));
     
     // download the shell script for the installation process
-    await downloadFile('conf/install.sh');
+    // await downloadFile('conf/install.sh');
     
     await getInstance();
     await chrome.storage.local.set({ 'blacklist': [] });
