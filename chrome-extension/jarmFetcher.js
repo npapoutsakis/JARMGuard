@@ -7,8 +7,8 @@
 
 // Public dataset default URL
 // The default URL for the public dataset is set to a specific path on github
-const blocklist = "https://raw.githubusercontent.com/npapoutsakis/domain_dataset/refs/heads/main/final/cleaned_dataset.csv";
-const trackers = "https://raw.githubusercontent.com/npapoutsakis/domain_dataset/refs/heads/main/final/ad_trackers.csv";
+const blocklist = "https://raw.githubusercontent.com/npapoutsakis/JARMGuard/refs/heads/main/pattern-sets/malicious.csv";
+const trackers = "https://raw.githubusercontent.com/npapoutsakis/JARMGuard/refs/heads/main/pattern-sets/ad_trackers.csv";
 const testing = {
   1: "https://raw.githubusercontent.com/npapoutsakis/domain_dataset/refs/heads/main/tests/50.csv",
   2: "https://raw.githubusercontent.com/npapoutsakis/domain_dataset/refs/heads/main/tests/100.csv",
