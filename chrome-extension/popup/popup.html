@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARMGuard</title>
+    <link rel="stylesheet" href="./popup.css">
+    <script src="./popup.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-section">
+            <div class="shield-icon">⛉</div>
+            <span class="app-name">JARMGuard</span>
+        </div>
+        <svg class="refresh-icon" id="refresh_button" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z"/>
+        </svg>
+    </div>
+
+    <div class="main-content">
+        <div class="current-site">
+            <div class="site-url" id="current-domain">Loading...</div>
+            <div class="status-label" id="status-label">
+                <div class="status-dot"></div>
+                <span>Protected</span>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="counted-stat">
+                <div class="counted-label">Trackers found on this site</div>
+                <div class="counted-number" id="counted-number">0</div>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <label class="toggle-switch">
+                <input type="checkbox" class="toggle-input" id="activation_toggle" checked>
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">Protected by JARMGuard</div>
+    </div>
+</body>
+</html>

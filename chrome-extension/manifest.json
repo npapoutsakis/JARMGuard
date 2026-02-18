@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "JARMGuard",
+  "version": "1.0",
+  "description": "Server Fingerprint Protection",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "nativeMessaging",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "JARMGuard",
+    "default_popup": "./popup/popup.html",
+    "default_icon": {
+      "128": "./icons/extension_icon.png"
+    }
+  }
+}
